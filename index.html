@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/svg+xml" href="temperature-three-quarters-solid.svg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <h2>Temperature Converter</h2>
+        <form action="">
+            <div class="amount">
+                <p>Enter value</p>
+                <input value="10" type="text">
+            </div>
+            <div class="dropdown">
+    <div class="from">
+        <p>From</p>
+        <div class="select-container">
+            <select name="from" id="from-unit">
+                <option value="celsius">Celsius (°C)</option>
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+            </select>
+        </div>
+    </div>
+
+    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+    <div class="to">
+        <p>To</p>
+        <div class="select-container">
+            <select name="to" id="to-unit">
+                <option value="celsius">Celsius (°C)</option>
+                <option value="fahrenheit" selected>Fahrenheit (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+            <div class="msg">
+                
+            </div>
+            <button>Convert</button>
+        </form>
+
+        <script src="script.js"></script>
+
+         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
